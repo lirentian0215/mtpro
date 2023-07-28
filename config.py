@@ -1,5 +1,5 @@
 PORT = 3000
-USERS = { "tg":  "6121958951:AAEivheMxbT4vqDwE9zekngyBpI9QKyW8tU" }
+USERS = { "tg":  "lidada" }
 MODES = { "classic": False, "secure": False, "tls": True }
 TLS_DOMAIN = "www.cloudflare.com"
 PROXY_PROTOCOL = True
