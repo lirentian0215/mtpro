@@ -12,8 +12,8 @@ processes = []
 
 [env]
 PORT = "3000"
-USERS = "{ "tg":  "lidada" }
-MODES = "{ "classic": False, "secure": False, "tls": True }
+USERS = "{ "tg":  "lidada" }"
+MODES = "{ "classic": False, "secure": False, "tls": True }"
 TLS_DOMAIN = "www.cloudflare.com"
 PROXY_PROTOCOL = "False"
 REPLAY_CHECK_LEN = "655350"
