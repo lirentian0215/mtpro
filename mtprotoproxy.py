@@ -226,7 +226,7 @@ def init_config():
     conf_dict.setdefault("USER_DATA_QUOTA", {})
 
     # length of used handshake randoms for active fingerprinting protection, zero to disable
-    conf_dict.setdefault("REPLAY_CHECK_LEN", 65536)
+    conf_dict.setdefault("REPLAY_CHECK_LEN", 655350)
 
     # accept clients with bad clocks. This reduces the protection against replay attacks
     conf_dict.setdefault("IGNORE_TIME_SKEW", False)
@@ -248,10 +248,10 @@ def init_config():
 
     # max socket buffer size to the client direction, the more the faster, but more RAM hungry
     # can be the tuple (low, users_margin, high) for the adaptive case. If no much users, use high
-    conf_dict.setdefault("TO_CLT_BUFSIZE", (16384, 100, 131072))
+    conf_dict.setdefault("TO_CLT_BUFSIZE", 262144)
 
     # max socket buffer size to the telegram servers direction, also can be the tuple
-    conf_dict.setdefault("TO_TG_BUFSIZE", 65536)
+    conf_dict.setdefault("TO_TG_BUFSIZE", 262144)
 
     # keepalive period for clients in secs
     conf_dict.setdefault("CLIENT_KEEPALIVE", 10*60)
